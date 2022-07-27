@@ -1,2 +1,2 @@
 # restaurant-page
-Using webpack and only JavaScript to create a sime restaurant homepage
+Using webpack and only JavaScript to create a simple restaurant homepage

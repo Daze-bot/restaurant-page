@@ -36,7 +36,7 @@ header {
 }
 
 header h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   font-family: 'title';
   font-weight: normal;
   color: var(--blue-sage-blue);
@@ -47,7 +47,7 @@ header h1 {
 header p {
   color: white;
   font-family: 'display';
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .pageTabs {

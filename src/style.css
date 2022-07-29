@@ -16,6 +16,11 @@
   src: url(./fonts/UnicaOne-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'baskerville';
+  src: url(./fonts/Baskervville-Regular.ttf);
+}
+
 * {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -27,7 +32,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--secondary-background-color);
   display: flex;
   flex-direction: column;
@@ -68,6 +73,8 @@ header p {
   border: none;
   border-radius: 8px 8px 0 0;
   cursor: pointer;
+  font-family: 'baskerville';
+  font-size: 1.2rem;
 }
 
 .tabBtn:hover {
@@ -83,17 +90,33 @@ header p {
 }
 
 main {
-  max-width: 1200px;
-  min-width: 800px;
-  height: 100%;
+  max-width: 850px;
   margin: 0 auto 50px;
+  padding: 45px 30px 50px;
   background: linear-gradient(to bottom, var(--blue-sage-blue), var(--blue-sage-blue) 5px, var(--primary-background-color) 5px);
   border-top: 5px solid var(--blue-sage-blue);
   border-radius: 8px;
   text-align: center;
+  color: white;
 }
 
 main p {
-  padding: 20px 10px 10px;
-  color: white;
+  font-family: 'baskerville';
+}
+
+.welcome {
+  font-size: 2rem;
+}
+
+.outsidePic {
+  background-image: url(./imgs/building.jpeg);
+  height: 400px;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  margin: 50px auto;
+}
+
+.welcome2 {
+  font-size: 1.5rem;
 }

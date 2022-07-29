@@ -8,7 +8,7 @@ function createHeader() {
   pageHeader.appendChild(h1);
 
   let text = document.createElement('p');
-  text.textContent = "Vegetarian Grille";
+  text.textContent = "VEGETARIAN GRILLE";
   pageHeader.appendChild(text);
 
   return pageHeader;

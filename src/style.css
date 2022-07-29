@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'title';
+  src: url(./fonts/Galada-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'display';
+  src: url(./fonts/UnicaOne-Regular.ttf);
+}
+
+:root {
+  --primary-background-cover: #272727;
+  --blue-sage-blue: #4153b3;
+}
+
 * {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -10,5 +25,33 @@
 
 body {
   height: 100%;
-  background-color: red;
+  background-color: var(--primary-background-cover);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 7rem;
+  font-family: 'title';
+  font-weight: normal;
+  color: var(--blue-sage-blue);
+  text-shadow: 0 0 6px white;
+  margin-bottom: -50px;
+}
+
+header p {
+  color: white;
+  font-family: 'display';
+  font-size: 2rem;
+}
+
+.pageTabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }

@@ -1,3 +1,11 @@
+:root {
+  --primary-background-color: #272727;
+  --secondary-background-color: #1d1d1d;
+  --blue-sage-blue: #4153b3;
+  --sage-blue-inactive: rgba(65, 82, 179, 0.4);
+  --sage-blue-hover: rgba(65, 82, 179, 0.6);
+}
+
 @font-face {
   font-family: 'title';
   src: url(./fonts/Galada-Regular.ttf);
@@ -6,11 +14,6 @@
 @font-face {
   font-family: 'display';
   src: url(./fonts/UnicaOne-Regular.ttf);
-}
-
-:root {
-  --primary-background-cover: #272727;
-  --blue-sage-blue: #4153b3;
 }
 
 * {
@@ -24,8 +27,8 @@
 }
 
 body {
-  height: 100%;
-  background-color: var(--primary-background-cover);
+  height: 100vh;
+  background-color: var(--secondary-background-color);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -53,5 +56,36 @@ header p {
 .pageTabs {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 1px;
+}
+
+.tabBtn {
+  padding: 10px 30px;
+  background-color: var(--sage-blue-inactive);
+  color: white;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+}
+
+.tabBtn:hover {
+  background-color: var(--sage-blue-hover);
+}
+
+.tabBtn.active {
+  background-color: var(--blue-sage-blue);
+}
+
+.tabBtn.active:hover {
+  background-color: var(--blue-sage-blue);
+}
+
+main {
+  max-width: 1200px;
+  min-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, var(--blue-sage-blue), var(--blue-sage-blue) 5px, var(--primary-background-color) 5px);
+  border-top: 5px solid var(--blue-sage-blue);
+  border-radius: 8px;
 }

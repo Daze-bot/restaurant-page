@@ -17,15 +17,15 @@ function createTabs() {
   pageTabs.classList.add('pageTabs');
 
   let homeBtn = document.createElement('button');
-  homeBtn.classList.add('homeBtn');
+  homeBtn.classList.add('tabBtn', 'homeBtn', 'active');
   homeBtn.textContent = "Home";
 
   let menuBtn = document.createElement('button');
-  menuBtn.classList.add('menuBtn');
+  menuBtn.classList.add('tabBtn', 'menuBtn');
   menuBtn.textContent = "Menu";
 
   let contactBtn = document.createElement('button');
-  contactBtn.classList.add('contactBtn');
+  contactBtn.classList.add('tabBtn', 'contactBtn');
   contactBtn.textContent = "Contact";
 
   pageTabs.appendChild(homeBtn);

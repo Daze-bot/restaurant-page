@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Blue Sage Vegetarian Grille',
+      favicon: './src/imgs/favicon.png',
     }),
   ],
   output: {

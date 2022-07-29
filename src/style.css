@@ -2,7 +2,7 @@
   --primary-background-color: #272727;
   --secondary-background-color: #1d1d1d;
   --blue-sage-blue: #4153b3;
-  --sage-blue-inactive: rgba(65, 82, 179, 0.4);
+  --sage-blue-inactive: rgba(65, 82, 179, 0.3);
   --sage-blue-hover: rgba(65, 82, 179, 0.6);
 }
 
@@ -31,11 +31,11 @@ body {
   background-color: var(--secondary-background-color);
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
 header {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 header h1 {
@@ -56,11 +56,13 @@ header p {
 .pageTabs {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1px;
 }
 
 .tabBtn {
-  padding: 10px 30px;
+  width: 115px;
+  height: 50px;
   background-color: var(--sage-blue-inactive);
   color: white;
   border: none;
@@ -84,8 +86,14 @@ main {
   max-width: 1200px;
   min-width: 800px;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   background: linear-gradient(to bottom, var(--blue-sage-blue), var(--blue-sage-blue) 5px, var(--primary-background-color) 5px);
   border-top: 5px solid var(--blue-sage-blue);
   border-radius: 8px;
+  text-align: center;
+}
+
+main p {
+  padding: 20px 10px 10px;
+  color: white;
 }

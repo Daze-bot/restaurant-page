@@ -17,7 +17,7 @@ function createTabs() {
   pageTabs.classList.add('pageTabs');
 
   let homeBtn = document.createElement('button');
-  homeBtn.classList.add('tabBtn', 'homeBtn', 'active');
+  homeBtn.classList.add('tabBtn', 'homeBtn');
   homeBtn.textContent = "Home";
 
   let menuBtn = document.createElement('button');

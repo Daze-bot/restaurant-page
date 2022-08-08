@@ -1,6 +1,7 @@
 import './style.css';
 import {createHeader, createTabs, createMain} from './initLoad';
 import {loadHome} from './home';
+import {loadMenu} from './menu';
 
 document.body.appendChild(createHeader());
 document.body.appendChild(createTabs());
@@ -15,6 +16,7 @@ homeBtn.addEventListener('click', loadHome);
 homeBtn.click();
 
 menuBtn.addEventListener('click', openTab);
+menuBtn.addEventListener('click', loadMenu);
 
 contactBtn.addEventListener('click', openTab);
 

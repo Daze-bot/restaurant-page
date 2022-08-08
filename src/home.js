@@ -19,24 +19,29 @@ function loadHome() {
   let hours = document.createElement('div');
   hours.classList.add('hours');
 
+  let lunchHours = document.createElement('div');
+
   let lspan = document.createElement('p');
   lspan.classList.add('meal');
   lspan.textContent = "Lunch:";
   let lunch = document.createElement('p');
-  lunch.classList.add('dates', 'lunch');
   lunch.textContent = "Wednesday through Sunday \n 12pm - 3pm";
+
+  let dinnerHours = document.createElement('div');
 
   let dspan = document.createElement('p');
   dspan.classList.add('meal');
   dspan.textContent = "Dinner:";
   let dinner = document.createElement('p');
-  dinner.classList.add('dates', 'dinner');
   dinner.textContent = "Tuesday through Sunday \n 4pm - 8pm";
 
-  hours.appendChild(lspan);
-  hours.appendChild(lunch);
-  hours.appendChild(dspan);
-  hours.appendChild(dinner);
+  lunchHours.appendChild(lspan);
+  lunchHours.appendChild(lunch);
+  dinnerHours.appendChild(dspan);
+  dinnerHours.appendChild(dinner);
+
+  hours.appendChild(lunchHours);
+  hours.appendChild(dinnerHours);
 
   main.appendChild(welcome);
   main.appendChild(outsidePic);

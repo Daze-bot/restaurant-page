@@ -3,7 +3,7 @@ import {createHeader, createTabs, createMain} from './initLoad';
 import {loadHome} from './home';
 
 document.body.appendChild(createHeader());
-document.body.appendChild(createTabs().pageTabs);
+document.body.appendChild(createTabs());
 document.body.appendChild(createMain());
 
 let homeBtn = document.querySelector('.homeBtn');

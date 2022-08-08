@@ -32,7 +32,7 @@ function createTabs() {
   pageTabs.appendChild(menuBtn);
   pageTabs.appendChild(contactBtn);
 
-  return {pageTabs, homeBtn, menuBtn, contactBtn};
+  return pageTabs;
 }
 
 function createMain() {

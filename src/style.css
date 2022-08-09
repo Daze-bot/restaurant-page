@@ -121,12 +121,14 @@ main p {
 .address {
   font-size: 2rem;
   white-space: pre-line;
-  margin-bottom: 50px;
 }
 
-.welcome2 {
-  padding: 0 150px;
-  margin-bottom: 50px;
+main hr {
+  height: 2px;
+  border: none;
+  background-color: var(--blue-sage-blue);
+  width: 150px;
+  margin: 50px auto;
 }
 
 .hours {
@@ -172,8 +174,8 @@ main p {
 .dinner {
   font-size: 2rem;
   text-decoration: underline;
-  margin-top: 50px;
   margin-bottom: 20px;
+  margin-top: -10px;
 }
 
 .dinnerFront {

@@ -32,9 +32,12 @@ function loadMenu() {
 
   dinnerMenu.appendChild(dinnerFront);
   dinnerMenu.appendChild(dinnerBack);
+
+  let hr = document.createElement('hr');
   
   main.appendChild(lunch);
   main.appendChild(lunchMenu);
+  main.appendChild(hr);
   main.appendChild(dinner);
   main.appendChild(dinnerMenu);
 

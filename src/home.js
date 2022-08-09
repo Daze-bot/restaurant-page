@@ -35,6 +35,9 @@ function loadHome() {
   let dinner = document.createElement('p');
   dinner.textContent = "Tuesday through Sunday \n 4pm - 8pm";
 
+  let hr = document.createElement('hr');
+  let hr2 = document.createElement('hr');
+
   lunchHours.appendChild(lspan);
   lunchHours.appendChild(lunch);
   dinnerHours.appendChild(dspan);
@@ -46,7 +49,9 @@ function loadHome() {
   main.appendChild(welcome);
   main.appendChild(outsidePic);
   main.appendChild(address);
+  main.appendChild(hr);
   main.appendChild(welcome2);
+  main.appendChild(hr2);
   main.appendChild(hours);
 
   return main;

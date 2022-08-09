@@ -100,7 +100,8 @@ main {
   color: white;
 }
 
-main p {
+main p,
+main a {
   font-family: 'baskerville';
   font-size: 1.5rem;
 }
@@ -184,4 +185,20 @@ main hr {
 
 .dinnerBack {
   background-image: url(./imgs/dinner-menu-back.png);
+}
+
+.contactType {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+a,
+a:visited {
+  color: var(--blue-sage-blue);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--sage-blue-hover);
 }

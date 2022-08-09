@@ -2,6 +2,7 @@ import './style.css';
 import {createHeader, createTabs, createMain} from './initLoad';
 import {loadHome} from './home';
 import {loadMenu} from './menu';
+import {loadContact} from './contact';
 
 document.body.appendChild(createHeader());
 document.body.appendChild(createTabs());
@@ -19,6 +20,7 @@ menuBtn.addEventListener('click', openTab);
 menuBtn.addEventListener('click', loadMenu);
 
 contactBtn.addEventListener('click', openTab);
+contactBtn.addEventListener('click', loadContact);
 
 function openTab() {
   let tabs = document.getElementsByClassName('tabBtn');

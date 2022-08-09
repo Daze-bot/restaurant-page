@@ -106,7 +106,7 @@ main p {
 }
 
 .welcome {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .outsidePic {
@@ -125,7 +125,7 @@ main p {
 }
 
 .welcome2 {
-  padding: 0 100px;
+  padding: 0 150px;
   margin-bottom: 50px;
 }
 
@@ -133,7 +133,7 @@ main p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: max(50px, 8vw);
   white-space: pre-line;
 }
 
@@ -143,6 +143,7 @@ main p {
 }
 
 .lunch {
+  font-size: 2rem;
   text-decoration: underline;
   margin-bottom: 20px;
 }
@@ -166,4 +167,19 @@ main p {
 
 .lunchBack {
   background-image: url(./imgs/lunch-menu-back.png);
+}
+
+.dinner {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.dinnerFront {
+  background-image: url(./imgs/dinner-menu.png);
+}
+
+.dinnerBack {
+  background-image: url(./imgs/dinner-menu-back.png);
 }
